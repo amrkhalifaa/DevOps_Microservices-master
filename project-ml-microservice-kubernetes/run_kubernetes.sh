@@ -16,3 +16,17 @@
 # Step 4:
 # Forward the container port to a host
 
+#!/usr/bin/env bash
+
+# This tags and uploads an image to Docker Hub
+
+
+dockerpath="fahmykhalilm/ml_project"
+
+kubectl create deployment ml-app --image=$dockerpath:ml-app --port=80
+
+kubectl get deployment
+kubectl get pods
+
+kubectl expose deployment ml-app --port=80 --target-port=80
+kubectl port-forward deployment/ml-app 8000:80

@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+docker build --tag=ml-app .
+docker image ls
+docker run -p 8000:80 ml-app
 
 ## Complete the following steps to get Docker running locally
 
