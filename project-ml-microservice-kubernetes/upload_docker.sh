@@ -6,7 +6,7 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="fahmykhalilm/ml_project"
+dockerpath="amrkhalifaa95/ml_project"
 
 # Step 2:  
 # Authenticate & tag

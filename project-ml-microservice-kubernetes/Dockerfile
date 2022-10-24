@@ -2,7 +2,7 @@ FROM python:3.7.3-stretch
 
 WORKDIR /app
 
-COPY ./APP
+COPY . /app/
 
 
 RUN pip install --upgrade pip &&\
@@ -11,7 +11,7 @@ RUN pip install --upgrade pip &&\
 
 Expose 80
 
-CMD["python","app.py"]
+CMD ["python", "app.py"]
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
